@@ -5,6 +5,7 @@ class Movies {
   int releaseYear;
   String? description;
   List<String> reviews;
+  String? movieId;
 
   static void sortOldToNew() {
     movieData.sort((a, b) => a.releaseYear.compareTo(b.releaseYear));
@@ -37,6 +38,7 @@ class Movies {
       required this.movieRating,
       required this.releaseYear,
       required this.reviews,
+      this.movieId,
       this.description});
 
   static List<Movies> movieData = [
@@ -47,6 +49,7 @@ class Movies {
         // 'assets/images/HouseMD.jpg',
         movieRating: 8.7,
         releaseYear: 2025,
+        movieId: '5DIADh4lMq8',
         reviews: [
           'Great TV Show!!',
           "Simply House is the best medical series made or will be! If you happen to read my previous reviews, you will know that I do not like long interviews, in short, House is the best medical series that is integrated in all of its 176 episodes . My rate : 9.7",
@@ -63,6 +66,7 @@ class Movies {
             'https://github.com/xDelusion/test/blob/main/assets/images/The100.jpg?raw=true',
         // 'assets/images/The100.jpg',
         movieRating: 7.6,
+        movieId: 'aDrsItJ_HU4',
         releaseYear: 2014,
         reviews: [
           "Hard to get into a show where everyone is so treacherous all the time. Add complete and utter stupidity from Clark and most of the 100. Super bad decisions that get made over and over again by everyone. By the end of season 3 this show is becoming near unwatchable. Usually i stay the course with shows I begin, but this one will be ending for me if it gets much worse.",
@@ -77,6 +81,7 @@ class Movies {
             'https://github.com/xDelusion/test/blob/main/assets/images/IntoTheB.jpg?raw=true',
         // 'assets/images/IntoTheB.jpg',
         movieRating: 7.9,
+        movieId: '5KyHy4KRvIc',
         releaseYear: 2015,
         reviews: [
           "One of my favourite shows of all time I can't believe they're getting rid of it as it goes from strength to strength. The last season ended perfectly to set up for a game changing 4th season that I absolutely need to see. I pray somebody saves this great program.",
@@ -91,6 +96,7 @@ class Movies {
             'https://github.com/xDelusion/test/blob/main/assets/images/WhiteCollar.jpg?raw=true',
         // 'assets/images/WhiteCollar.jpg',
         movieRating: 8.2,
+        movieId: "nvqE0kSXTT4",
         releaseYear: 2009,
         reviews: [
           "What to say. White collar is one of the special ones. It's funny, heart warming, action packed (at times). Worth watching for all ages the the two leads play off each other better than any other tv duo I can recall in recent history.\n"
