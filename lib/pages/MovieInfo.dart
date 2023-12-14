@@ -70,12 +70,15 @@ class _MovieInfoState extends State<MovieInfo> {
               padding: EdgeInsets.all(20),
               child: Row(
                 children: [
-                  Text(widget.movie),
+                  Text(
+                    widget.movie,
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                  ),
                 ],
               ),
             ),
 
-            VideoPlayerCard(), // ? Video Player ** * **
+            VideoPlayerCard(movieId: movie.movieId), // ? Video Player ** * **
 
             SizedBox(height: 15),
 
